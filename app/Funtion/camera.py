@@ -2,6 +2,7 @@ import cv2
 import face_recognition
 import time
 import os
+from deepface import DeepFace
 from app.Funtion.backlog_saver import backlog_saver
 class Camera:
     def __init__(self, socketio):
@@ -15,6 +16,7 @@ class Camera:
         self.video_writer = None
         self.face_locations = []
         self.last_capture_time = 0
+        self.face_emotions = []
         # Tạo thư mục nếu chưa tồn tại
         if not os.path.exists(self.image_folder):
             os.makedirs(self.image_folder)
@@ -28,14 +30,19 @@ class Camera:
             rgb_frame = frame[:, :, ::-1]
             self.face_locations = face_recognition.face_locations(rgb_frame)
 
-            for face_location in self.face_locations:
-                top, right, bottom, left = face_location
-                cv2.rectangle(frame, (left, top), (right, bottom), (0, 255, 0), 2)
+            if self.face_locations:
+                for face_location in self.face_locations:
+                    top, right, bottom, left = face_location
+                    cv2.rectangle(frame, (left, top), (right, bottom), (0, 255, 0), 2)
+                    face_image = rgb_frame[top:bottom, left:right]
+                    face_emotion = self.detect_emotion(face_image)
+                self.face_emotions.append(face_emotion)
 
-                # Hiển thị vị trí bên cạnh bounding box
+                # Hiển thị cảm xúc bên cạnh bounding box
+                emotion_text = f"Emotion: {face_emotion}"
                 text = f"Location: {top}, {right}, {bottom}, {left}"
-                cv2.putText(frame, text, (left, top - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
-
+                cv2.putText(frame, emotion_text, (left, top - 15), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
+                cv2.putText(frame, text, (left, bottom + 15), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
             self.capture_image(frame)
 
             ret, jpeg = cv2.imencode('.jpg', frame)
@@ -43,6 +50,18 @@ class Camera:
 
             yield (b'--frame\r\n'
                    b'Content-Type: image/jpeg\r\n\r\n' + frame_bytes + b'\r\n')
+
+    def detect_emotion(self, face_image):
+        # Sử dụng face_recognition để kiểm tra xem có khuôn mặt trong ảnh hay không
+        face_locations = face_recognition.face_locations(face_image)
+        if not face_locations:
+            return None  # Không có khuôn mặt, không cần phân tích cảm xúc
+
+        # Phân tích cảm xúc bằng DeepFace
+        emotions = DeepFace.analyze(face_image, actions=['emotion'],enforce_detection=False)
+        emotions_data = emotions
+        dominant_emotion = emotions_data[0]['dominant_emotion']
+        return dominant_emotion
 
     def write_video_frame(self, frame):
         if self.video_writer is None:
@@ -83,7 +102,6 @@ class Camera:
 
     def get_detection_log(self):
         log_messages = [f"Face detected at: {location}" for location in self.face_locations]
-
         if self.total_image_count > 0:
             log_messages.append(f"Total images captured: {self.total_image_count}")
 

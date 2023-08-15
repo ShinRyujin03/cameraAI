@@ -8,7 +8,7 @@ class Camera:
         self.cap = cv2.VideoCapture(1, cv2.CAP_AVFOUNDATION)
         self.socketio = socketio
         self.total_image_count = 0  # Tổng số lượng ảnh đã chụp
-        self.image_folder = 'output/captured_images'  # Tên thư mục lưu ảnh
+        self.image_folder = '/Users/macbookairm1/Desktop/Viettel/API/output/captured_images'  # Tên thư mục lưu ảnh
         self.capture_enabled = False  # Trạng thái chụp ảnh
         self.video_enabled = False  # Trạng thái quay video
         self.video_filename = '/output/captured_video.mp4'  # Tên tệp video

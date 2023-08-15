@@ -30,7 +30,7 @@ def toggle_video():
 @app.route('/save_backlog_to_file', methods=['GET'])
 def save_backlog_to_file():
     try:
-        backlog_saver.save_to_file('output/backlog.txt')
+        backlog_saver.save_to_file('/Users/macbookairm1/Desktop/Viettel/API/output/backlog.txt')
         return jsonify(success=True)
     except Exception as e:
         print("Error saving backlog:", e)

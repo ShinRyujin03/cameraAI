@@ -46,6 +46,9 @@ class Camera:
                                     (0, 255, 0), 2)
                         cv2.putText(frame, location_text, (left, bottom + 15), cv2.FONT_HERSHEY_SIMPLEX, 0.5,
                                     (0, 255, 0), 2)
+                    else:
+                        cv2.putText(frame, location_text, (left, bottom + 15), cv2.FONT_HERSHEY_SIMPLEX, 0.5,
+                                    (0, 255, 0), 2)
 
                 self.capture_image(frame)
 
@@ -87,7 +90,7 @@ class Camera:
     def write_video_frame(self, frame):
         if self.video_writer is None:
             fourcc = cv2.VideoWriter_fourcc(*'H264')
-            self.video_writer = cv2.VideoWriter(self.video_filename, fourcc, 10.0, (frame.shape[1], frame.shape[0]))
+            self.video_writer = cv2.VideoWriter(self.video_filename, fourcc, 5.0, (frame.shape[1], frame.shape[0]))
 
         self.video_writer.write(frame)
 

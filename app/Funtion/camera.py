@@ -101,15 +101,20 @@ class Camera:
 
 
     def get_detection_log(self):
-        log_messages = [f"Face detected at: {location}" for location in self.face_locations]
-        if self.total_image_count > 0:
-            log_messages.append(f"Total images captured: {self.total_image_count}")
+    log_messages = [f"Face detected at: {location}, Emotion: {self.face_emotions[i]}" 
+                    for i, location in enumerate(self.face_locations)]
 
-        # Thêm thông báo trạng thái chụp ảnh và video
-        log_messages.append(f"Capture enabled: {self.capture_enabled}")
-        log_messages.append(f"Video enabled: {self.video_enabled}")
-        # Thêm log messages vào backlog_saver
-        for message in log_messages:
-            backlog_saver.add_to_backlog(message)
-        return log_messages
+    if self.total_image_count > 0:
+        log_messages.append(f"Total images captured: {self.total_image_count}")
+
+    # Thêm thông báo trạng thái chụp ảnh và video
+    log_messages.append(f"Capture enabled: {self.capture_enabled}")
+    log_messages.append(f"Video enabled: {self.video_enabled}")
+    
+    # Thêm log messages vào backlog_saver
+    for message in log_messages:
+        backlog_saver.add_to_backlog(message)
+
+    return log_messages
+
 

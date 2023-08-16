@@ -32,26 +32,28 @@ class Camera:
             self.face_locations = face_recognition.face_locations(rgb_frame)
 
             if self.face_locations:
-                for face_location in self.face_locations:
+                for i, face_location in enumerate(self.face_locations):
                     top, right, bottom, left = face_location
                     cv2.rectangle(frame, (left, top), (right, bottom), (0, 255, 0), 2)
                     face_image = rgb_frame[top:bottom, left:right]
                     face_emotion = self.detect_emotion(face_image)
-                self.face_emotions.append(face_emotion)
+                    self.face_emotions.append(face_emotion)  # Thêm cảm xúc vào danh sách
 
-                # Hiển thị cảm xúc bên cạnh bounding box
-                emotion_text = f"Emotion: {face_emotion}"
-                text = f"Location: {top}, {right}, {bottom}, {left}"
-                if self.face_emotions[-1] is not None:
-                    cv2.putText(frame, emotion_text, (left, bottom + 30), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
-                cv2.putText(frame, text, (left, bottom + 15), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
-            self.capture_image(frame)
+                    if face_emotion is not None:
+                        emotion_text = f"Emotion: {face_emotion}"
+                        location_text = f"Location: top={top}, right={right}, bottom={bottom}, left={left}"
+                        cv2.putText(frame, emotion_text, (left, bottom + 30), cv2.FONT_HERSHEY_SIMPLEX, 0.5,
+                                    (0, 255, 0), 2)
+                        cv2.putText(frame, location_text, (left, bottom + 15), cv2.FONT_HERSHEY_SIMPLEX, 0.5,
+                                    (0, 255, 0), 2)
 
-            ret, jpeg = cv2.imencode('.jpg', frame)
-            frame_bytes = jpeg.tobytes()
+                self.capture_image(frame)
 
-            yield (b'--frame\r\n'
-                   b'Content-Type: image/jpeg\r\n\r\n' + frame_bytes + b'\r\n')
+                ret, jpeg = cv2.imencode('.jpg', frame)
+                frame_bytes = jpeg.tobytes()
+
+                yield (b'--frame\r\n'
+                       b'Content-Type: image/jpeg\r\n\r\n' + frame_bytes + b'\r\n')
 
     def detect_emotion(self, face_image):
         # Sử dụng face_recognition để kiểm tra xem có khuôn mặt trong ảnh hay không
@@ -76,9 +78,9 @@ class Camera:
             'neutral': 0
         }
 
-        for emotion in self.face_emotions:
-            if emotion is not None:
-                emotion_counts[emotion] += 1
+        for face_emotion in self.face_emotions:
+            if face_emotion is not None:
+                emotion_counts[face_emotion] += 1
 
         return emotion_counts
 
@@ -121,21 +123,31 @@ class Camera:
             self.video_enabled = True
         return self.video_enabled
 
-
     def get_detection_log(self):
-        log_messages = [f"Face detected at: {location}" for location in enumerate(self.face_locations)]
-        if self.face_emotions[-1] is not None:
-            log_messages.append(f"Emotion: {self.face_emotions[-1]}")
+        log_messages = []
+
+        for i, location in enumerate(self.face_locations):
+            emotion = self.face_emotions[i-1]
+            emotion_text = f"Emotion: {emotion}" if emotion is not None else "Emotion: Unknown"
+            location_text = f"Face detected at: {location}, {emotion_text}"
+            log_messages.append(location_text)
+
         if self.total_image_count > 0:
             log_messages.append(f"Total images captured: {self.total_image_count}")
-        emotion_counts = self.get_emotion_statistics()
-        log_messages.append(f"Emotion count: {emotion_counts}")
+
         # Thêm thông báo trạng thái chụp ảnh và video
         log_messages.append(f"Capture enabled: {self.capture_enabled}")
         log_messages.append(f"Video enabled: {self.video_enabled}")
+
+        # Thêm thông tin về cảm xúc
+        emotion_statistics = self.get_emotion_statistics()
+        for face_emotion, count in emotion_statistics.items():
+            log_messages.append(f"{face_emotion.capitalize()} count: {count}")
 
         # Thêm log messages vào backlog_saver
         for message in log_messages:
             backlog_saver.add_to_backlog(message)
 
         return log_messages
+
+

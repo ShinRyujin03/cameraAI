@@ -6,13 +6,10 @@ Flask==2.2.2
 Flask_DebugToolbar==0.13.1
 Flask_SocketIO==5.3.5
 numpy==1.24.1
-numpy==1.23.5
 opencv_contrib_python==4.7.0.68
 opencv_python==4.7.0.68
 picamera==1.13
-Pillow==9.4.0
 Pillow==10.0.0
 scikit_learn==1.2.2
 setuptools==58.1.0
-setuptools==57.0.0
 waitress==2.1.2

@@ -64,6 +64,23 @@ class Camera:
         dominant_emotion = emotions_data[0]['dominant_emotion']
         return dominant_emotion
 
+    def get_emotion_statistics(self):
+        emotion_counts = {
+            'angry': 0,
+            'disgust': 0,
+            'fear': 0,
+            'happy': 0,
+            'sad': 0,
+            'surprise': 0,
+            'neutral': 0
+        }
+
+        for emotion in self.face_emotions:
+            if emotion is not None:
+                emotion_counts[emotion] += 1
+
+        return emotion_counts
+
     def write_video_frame(self, frame):
         if self.video_writer is None:
             fourcc = cv2.VideoWriter_fourcc(*'H264')
@@ -110,7 +127,8 @@ class Camera:
             log_messages.append(f"Emotion: {self.face_emotions[-1]}")
         if self.total_image_count > 0:
             log_messages.append(f"Total images captured: {self.total_image_count}")
-
+        emotion_counts = self.get_emotion_statistics()
+        log_messages.append(f"Emotion count: {emotion_counts}")
         # Thêm thông báo trạng thái chụp ảnh và video
         log_messages.append(f"Capture enabled: {self.capture_enabled}")
         log_messages.append(f"Video enabled: {self.video_enabled}")
@@ -120,5 +138,3 @@ class Camera:
             backlog_saver.add_to_backlog(message)
 
         return log_messages
-
-

@@ -9,10 +9,10 @@ class Camera:
         self.cap = cv2.VideoCapture(1, cv2.CAP_AVFOUNDATION)
         self.socketio = socketio
         self.total_image_count = 0  # Tổng số lượng ảnh đã chụp
-        self.image_folder = '/Users/macbookairm1/Desktop/Viettel/API/output/captured_images'  # Tên thư mục lưu ảnh
+        self.image_folder = '/Users/macbookairm1/Desktop/Viettel/CameraAI/output/captured_images'  # Tên thư mục lưu ảnh
         self.capture_enabled = False  # Trạng thái chụp ảnh
         self.video_enabled = False  # Trạng thái quay video
-        self.video_filename = '/output/captured_video.mp4'  # Tên tệp video
+        self.video_filename = '/Users/macbookairm1/Desktop/Viettel/CameraAI/output/captured_video.mp4'  # Tên tệp video
         self.video_writer = None
         self.face_locations = []
         self.last_capture_time = 0
@@ -41,7 +41,8 @@ class Camera:
                 # Hiển thị cảm xúc bên cạnh bounding box
                 emotion_text = f"Emotion: {face_emotion}"
                 text = f"Location: {top}, {right}, {bottom}, {left}"
-                cv2.putText(frame, emotion_text, (left, top - 15), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
+                if self.face_emotions[-1] is not None:
+                    cv2.putText(frame, emotion_text, (left, bottom + 30), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
                 cv2.putText(frame, text, (left, bottom + 15), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
             self.capture_image(frame)
 
@@ -85,6 +86,9 @@ class Camera:
                     'message': f"Image captured at {time.strftime('%Y-%m-%d %H:%M:%S')} as {self.last_image_filename}"},
                                    namespace='/test')
                 self.total_image_count += 1
+                # Ghi frame vào video
+        if self.video_enabled:
+            self.write_video_frame(frame)
     def toggle_capture(self):
         self.capture_enabled = not self.capture_enabled
         return self.capture_enabled
@@ -101,20 +105,20 @@ class Camera:
 
 
     def get_detection_log(self):
-    log_messages = [f"Face detected at: {location}, Emotion: {self.face_emotions[i]}" 
-                    for i, location in enumerate(self.face_locations)]
+        log_messages = [f"Face detected at: {location}" for location in enumerate(self.face_locations)]
+        if self.face_emotions[-1] is not None:
+            log_messages.append(f"Emotion: {self.face_emotions[-1]}")
+        if self.total_image_count > 0:
+            log_messages.append(f"Total images captured: {self.total_image_count}")
 
-    if self.total_image_count > 0:
-        log_messages.append(f"Total images captured: {self.total_image_count}")
+        # Thêm thông báo trạng thái chụp ảnh và video
+        log_messages.append(f"Capture enabled: {self.capture_enabled}")
+        log_messages.append(f"Video enabled: {self.video_enabled}")
 
-    # Thêm thông báo trạng thái chụp ảnh và video
-    log_messages.append(f"Capture enabled: {self.capture_enabled}")
-    log_messages.append(f"Video enabled: {self.video_enabled}")
-    
-    # Thêm log messages vào backlog_saver
-    for message in log_messages:
-        backlog_saver.add_to_backlog(message)
+        # Thêm log messages vào backlog_saver
+        for message in log_messages:
+            backlog_saver.add_to_backlog(message)
 
-    return log_messages
+        return log_messages
 
 

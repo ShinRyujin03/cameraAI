@@ -3,16 +3,17 @@ import face_recognition
 import time
 import os
 from deepface import DeepFace
-from app.Funtion.backlog_saver import backlog_saver
+from app.funtion.backlog_saver import backlog_saver
+from app.config import Config
 class Camera:
     def __init__(self, socketio):
         self.cap = cv2.VideoCapture(1, cv2.CAP_AVFOUNDATION)
         self.socketio = socketio
         self.total_image_count = 0  # Tổng số lượng ảnh đã chụp
-        self.image_folder = '/Users/macbookairm1/Desktop/Viettel/CameraAI/output/captured_images'  # Tên thư mục lưu ảnh
+        self.image_folder = Config.img_folder  # Tên thư mục lưu ảnh
         self.capture_enabled = False  # Trạng thái chụp ảnh
         self.video_enabled = False  # Trạng thái quay video
-        self.video_filename = '/Users/macbookairm1/Desktop/Viettel/CameraAI/output/captured_video.mp4'  # Tên tệp video
+        self.video_filename = Config.vid_filename  # Tên tệp video
         self.video_writer = None
         self.face_locations = []
         self.last_capture_time = 0

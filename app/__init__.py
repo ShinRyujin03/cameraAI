@@ -1,11 +1,11 @@
 from flask import Flask
 from flask_debugtoolbar import DebugToolbarExtension
 from flask_socketio import SocketIO
-import os
+from app.config import Config
 
 app = Flask(__name__)
 app.debug = False
-app.config['SECRET_KEY'] = os.urandom(24)
+app.config['SECRET_KEY'] = Config.key
 socketio = SocketIO(app)
 #TBAR = DebugToolbarExtension(app)
 

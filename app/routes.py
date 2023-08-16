@@ -1,7 +1,8 @@
 from flask import Response, render_template, jsonify
 from . import app, socketio  # Import socketio từ app
-from .Funtion.camera import Camera
-from .Funtion.backlog_saver import backlog_saver
+from .funtion.camera import Camera
+from .funtion.backlog_saver import backlog_saver
+from app.config import Config
 
 camera = Camera(socketio)
 @app.route('/')
@@ -30,7 +31,7 @@ def toggle_video():
 @app.route('/save_backlog_to_file', methods=['GET'])
 def save_backlog_to_file():
     try:
-        backlog_saver.save_to_file('/Users/macbookairm1/Desktop/Viettel/CameraAI/output/backlog.txt')
+        backlog_saver.save_to_file(Config.backlog_filename)
         return jsonify(success=True)
     except Exception as e:
         print("Error saving backlog:", e)

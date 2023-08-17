@@ -86,7 +86,7 @@ class Camera:
 
     def write_video_frame(self, frame):
         if self.video_writer is None:
-            fourcc = cv2.VideoWriter_fourcc(*'H264')
+            fourcc = cv2.VideoWriter_fourcc(*Config.output_vid_codec)
             self.video_writer = cv2.VideoWriter(self.video_filename, fourcc, Config.output_vid_fps, (frame.shape[1], frame.shape[0]))
 
         self.video_writer.write(frame)

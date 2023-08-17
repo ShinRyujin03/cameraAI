@@ -1,0 +1,988 @@
+[2023-08-16 15:44:14] Face detected at: (171, 825, 439, 557), Emotion: happy
+ 
+[2023-08-16 15:44:14] Capture enabled: False
+ 
+[2023-08-16 15:44:14] Video enabled: False
+ 
+[2023-08-16 15:44:14] Angry count: 0
+ 
+[2023-08-16 15:44:14] Disgust count: 0
+ 
+[2023-08-16 15:44:14] Fear count: 0
+ 
+[2023-08-16 15:44:14] Happy count: 1
+ 
+[2023-08-16 15:44:14] Sad count: 0
+ 
+[2023-08-16 15:44:14] Surprise count: 0
+ 
+[2023-08-16 15:44:14] Neutral count: 0
+ 
+[2023-08-16 15:44:16] Face detected at: (192, 811, 415, 588), Emotion: neutral
+ 
+[2023-08-16 15:44:16] Capture enabled: False
+ 
+[2023-08-16 15:44:16] Video enabled: False
+ 
+[2023-08-16 15:44:16] Angry count: 1
+ 
+[2023-08-16 15:44:16] Disgust count: 0
+ 
+[2023-08-16 15:44:16] Fear count: 0
+ 
+[2023-08-16 15:44:16] Happy count: 1
+ 
+[2023-08-16 15:44:16] Sad count: 0
+ 
+[2023-08-16 15:44:16] Surprise count: 0
+ 
+[2023-08-16 15:44:16] Neutral count: 1
+ 
+[2023-08-16 15:44:18] Face detected at: (171, 854, 439, 587), Emotion: neutral
+ 
+[2023-08-16 15:44:18] Capture enabled: False
+ 
+[2023-08-16 15:44:18] Video enabled: False
+ 
+[2023-08-16 15:44:18] Angry count: 1
+ 
+[2023-08-16 15:44:18] Disgust count: 0
+ 
+[2023-08-16 15:44:18] Fear count: 1
+ 
+[2023-08-16 15:44:18] Happy count: 1
+ 
+[2023-08-16 15:44:18] Sad count: 0
+ 
+[2023-08-16 15:44:18] Surprise count: 0
+ 
+[2023-08-16 15:44:18] Neutral count: 4
+ 
+[2023-08-16 15:44:20] Face detected at: (171, 854, 439, 587), Emotion: happy
+ 
+[2023-08-16 15:44:20] Capture enabled: False
+ 
+[2023-08-16 15:44:20] Video enabled: False
+ 
+[2023-08-16 15:44:20] Angry count: 2
+ 
+[2023-08-16 15:44:20] Disgust count: 0
+ 
+[2023-08-16 15:44:20] Fear count: 1
+ 
+[2023-08-16 15:44:20] Happy count: 3
+ 
+[2023-08-16 15:44:20] Sad count: 0
+ 
+[2023-08-16 15:44:20] Surprise count: 0
+ 
+[2023-08-16 15:44:20] Neutral count: 6
+ 
+[2023-08-16 15:44:22] Face detected at: (167, 811, 390, 588), Emotion: surprise
+ 
+[2023-08-16 15:44:22] Capture enabled: False
+ 
+[2023-08-16 15:44:22] Video enabled: False
+ 
+[2023-08-16 15:44:22] Angry count: 2
+ 
+[2023-08-16 15:44:22] Disgust count: 0
+ 
+[2023-08-16 15:44:22] Fear count: 2
+ 
+[2023-08-16 15:44:22] Happy count: 3
+ 
+[2023-08-16 15:44:22] Sad count: 0
+ 
+[2023-08-16 15:44:22] Surprise count: 1
+ 
+[2023-08-16 15:44:22] Neutral count: 8
+ 
+[2023-08-16 15:44:24] Face detected at: (192, 811, 415, 588), Emotion: Unknown
+ 
+[2023-08-16 15:44:24] Capture enabled: False
+ 
+[2023-08-16 15:44:24] Video enabled: False
+ 
+[2023-08-16 15:44:24] Angry count: 2
+ 
+[2023-08-16 15:44:24] Disgust count: 0
+ 
+[2023-08-16 15:44:24] Fear count: 2
+ 
+[2023-08-16 15:44:24] Happy count: 4
+ 
+[2023-08-16 15:44:24] Sad count: 0
+ 
+[2023-08-16 15:44:24] Surprise count: 1
+ 
+[2023-08-16 15:44:24] Neutral count: 9
+ 
+[2023-08-16 15:44:26] Face detected at: (192, 811, 415, 588), Emotion: Unknown
+ 
+[2023-08-16 15:44:26] Capture enabled: False
+ 
+[2023-08-16 15:44:26] Video enabled: False
+ 
+[2023-08-16 15:44:26] Angry count: 2
+ 
+[2023-08-16 15:44:26] Disgust count: 0
+ 
+[2023-08-16 15:44:26] Fear count: 2
+ 
+[2023-08-16 15:44:26] Happy count: 4
+ 
+[2023-08-16 15:44:26] Sad count: 0
+ 
+[2023-08-16 15:44:26] Surprise count: 1
+ 
+[2023-08-16 15:44:26] Neutral count: 9
+ 
+[2023-08-16 15:44:28] Face detected at: (222, 820, 407, 634), Emotion: neutral
+ 
+[2023-08-16 15:44:28] Capture enabled: False
+ 
+[2023-08-16 15:44:28] Video enabled: False
+ 
+[2023-08-16 15:44:28] Angry count: 2
+ 
+[2023-08-16 15:44:28] Disgust count: 0
+ 
+[2023-08-16 15:44:28] Fear count: 2
+ 
+[2023-08-16 15:44:28] Happy count: 5
+ 
+[2023-08-16 15:44:28] Sad count: 0
+ 
+[2023-08-16 15:44:28] Surprise count: 1
+ 
+[2023-08-16 15:44:28] Neutral count: 12
+ 
+[2023-08-16 15:44:30] Face detected at: (217, 835, 440, 613), Emotion: happy
+ 
+[2023-08-16 15:44:30] Capture enabled: False
+ 
+[2023-08-16 15:44:30] Video enabled: False
+ 
+[2023-08-16 15:44:30] Angry count: 2
+ 
+[2023-08-16 15:44:30] Disgust count: 0
+ 
+[2023-08-16 15:44:30] Fear count: 2
+ 
+[2023-08-16 15:44:30] Happy count: 7
+ 
+[2023-08-16 15:44:30] Sad count: 0
+ 
+[2023-08-16 15:44:30] Surprise count: 1
+ 
+[2023-08-16 15:44:30] Neutral count: 14
+ 
+[2023-08-16 15:44:32] Face detected at: (242, 820, 428, 634), Emotion: neutral
+ 
+[2023-08-16 15:44:32] Capture enabled: False
+ 
+[2023-08-16 15:44:32] Video enabled: False
+ 
+[2023-08-16 15:44:32] Angry count: 2
+ 
+[2023-08-16 15:44:32] Disgust count: 0
+ 
+[2023-08-16 15:44:32] Fear count: 2
+ 
+[2023-08-16 15:44:32] Happy count: 8
+ 
+[2023-08-16 15:44:32] Sad count: 0
+ 
+[2023-08-16 15:44:32] Surprise count: 1
+ 
+[2023-08-16 15:44:32] Neutral count: 18
+ 
+[2023-08-16 15:44:34] Face detected at: (242, 820, 428, 634), Emotion: angry
+ 
+[2023-08-16 15:44:34] Capture enabled: False
+ 
+[2023-08-16 15:44:34] Video enabled: False
+ 
+[2023-08-16 15:44:34] Angry count: 3
+ 
+[2023-08-16 15:44:34] Disgust count: 0
+ 
+[2023-08-16 15:44:34] Fear count: 3
+ 
+[2023-08-16 15:44:34] Happy count: 8
+ 
+[2023-08-16 15:44:34] Sad count: 0
+ 
+[2023-08-16 15:44:34] Surprise count: 1
+ 
+[2023-08-16 15:44:34] Neutral count: 20
+ 
+[2023-08-16 15:44:36] Face detected at: (201, 840, 387, 655), Emotion: neutral
+ 
+[2023-08-16 15:44:36] Capture enabled: False
+ 
+[2023-08-16 15:44:36] Video enabled: False
+ 
+[2023-08-16 15:44:36] Angry count: 3
+ 
+[2023-08-16 15:44:36] Disgust count: 0
+ 
+[2023-08-16 15:44:36] Fear count: 3
+ 
+[2023-08-16 15:44:36] Happy count: 8
+ 
+[2023-08-16 15:44:36] Sad count: 1
+ 
+[2023-08-16 15:44:36] Surprise count: 2
+ 
+[2023-08-16 15:44:36] Neutral count: 23
+ 
+[2023-08-16 15:44:38] Face detected at: (222, 861, 407, 675), Emotion: Unknown
+ 
+[2023-08-16 15:44:38] Capture enabled: False
+ 
+[2023-08-16 15:44:38] Video enabled: False
+ 
+[2023-08-16 15:44:38] Angry count: 3
+ 
+[2023-08-16 15:44:38] Disgust count: 0
+ 
+[2023-08-16 15:44:38] Fear count: 3
+ 
+[2023-08-16 15:44:38] Happy count: 8
+ 
+[2023-08-16 15:44:38] Sad count: 2
+ 
+[2023-08-16 15:44:38] Surprise count: 2
+ 
+[2023-08-16 15:44:38] Neutral count: 24
+ 
+[2023-08-16 15:44:40] Face detected at: (222, 861, 407, 675), Emotion: Unknown
+ 
+[2023-08-16 15:44:40] Capture enabled: False
+ 
+[2023-08-16 15:44:40] Video enabled: False
+ 
+[2023-08-16 15:44:40] Angry count: 3
+ 
+[2023-08-16 15:44:40] Disgust count: 0
+ 
+[2023-08-16 15:44:40] Fear count: 3
+ 
+[2023-08-16 15:44:40] Happy count: 8
+ 
+[2023-08-16 15:44:40] Sad count: 2
+ 
+[2023-08-16 15:44:40] Surprise count: 2
+ 
+[2023-08-16 15:44:40] Neutral count: 24
+ 
+[2023-08-16 15:44:42] Face detected at: (222, 675, 407, 489), Emotion: neutral
+ 
+[2023-08-16 15:44:42] Capture enabled: False
+ 
+[2023-08-16 15:44:42] Video enabled: False
+ 
+[2023-08-16 15:44:42] Angry count: 4
+ 
+[2023-08-16 15:44:42] Disgust count: 0
+ 
+[2023-08-16 15:44:42] Fear count: 4
+ 
+[2023-08-16 15:44:42] Happy count: 8
+ 
+[2023-08-16 15:44:42] Sad count: 2
+ 
+[2023-08-16 15:44:42] Surprise count: 2
+ 
+[2023-08-16 15:44:42] Neutral count: 25
+ 
+[2023-08-16 15:44:44] Face detected at: (142, 712, 365, 489), Emotion: neutral
+ 
+[2023-08-16 15:44:44] Capture enabled: False
+ 
+[2023-08-16 15:44:44] Video enabled: False
+ 
+[2023-08-16 15:44:44] Angry count: 5
+ 
+[2023-08-16 15:44:44] Disgust count: 0
+ 
+[2023-08-16 15:44:44] Fear count: 5
+ 
+[2023-08-16 15:44:44] Happy count: 8
+ 
+[2023-08-16 15:44:44] Sad count: 2
+ 
+[2023-08-16 15:44:44] Surprise count: 2
+ 
+[2023-08-16 15:44:44] Neutral count: 27
+ 
+[2023-08-16 15:44:46] Face detected at: (222, 716, 407, 531), Emotion: neutral
+ 
+[2023-08-16 15:44:46] Capture enabled: False
+ 
+[2023-08-16 15:44:46] Video enabled: False
+ 
+[2023-08-16 15:44:46] Angry count: 5
+ 
+[2023-08-16 15:44:46] Disgust count: 0
+ 
+[2023-08-16 15:44:46] Fear count: 5
+ 
+[2023-08-16 15:44:46] Happy count: 9
+ 
+[2023-08-16 15:44:46] Sad count: 2
+ 
+[2023-08-16 15:44:46] Surprise count: 2
+ 
+[2023-08-16 15:44:46] Neutral count: 31
+ 
+[2023-08-16 15:44:48] Face detected at: (263, 737, 449, 551), Emotion: neutral
+ 
+[2023-08-16 15:44:48] Capture enabled: False
+ 
+[2023-08-16 15:44:48] Video enabled: True
+ 
+[2023-08-16 15:44:48] Angry count: 5
+ 
+[2023-08-16 15:44:48] Disgust count: 0
+ 
+[2023-08-16 15:44:48] Fear count: 5
+ 
+[2023-08-16 15:44:48] Happy count: 9
+ 
+[2023-08-16 15:44:48] Sad count: 3
+ 
+[2023-08-16 15:44:48] Surprise count: 2
+ 
+[2023-08-16 15:44:48] Neutral count: 34
+ 
+[2023-08-16 15:44:50] Face detected at: (192, 712, 415, 489), Emotion: neutral
+ 
+[2023-08-16 15:44:50] Capture enabled: False
+ 
+[2023-08-16 15:44:50] Video enabled: True
+ 
+[2023-08-16 15:44:50] Angry count: 6
+ 
+[2023-08-16 15:44:50] Disgust count: 0
+ 
+[2023-08-16 15:44:50] Fear count: 6
+ 
+[2023-08-16 15:44:50] Happy count: 9
+ 
+[2023-08-16 15:44:50] Sad count: 3
+ 
+[2023-08-16 15:44:50] Surprise count: 2
+ 
+[2023-08-16 15:44:50] Neutral count: 37
+ 
+[2023-08-16 15:44:52] Face detected at: (222, 758, 407, 572), Emotion: fear
+ 
+[2023-08-16 15:44:52] Capture enabled: False
+ 
+[2023-08-16 15:44:52] Video enabled: True
+ 
+[2023-08-16 15:44:52] Angry count: 6
+ 
+[2023-08-16 15:44:52] Disgust count: 0
+ 
+[2023-08-16 15:44:52] Fear count: 8
+ 
+[2023-08-16 15:44:52] Happy count: 9
+ 
+[2023-08-16 15:44:52] Sad count: 4
+ 
+[2023-08-16 15:44:52] Surprise count: 2
+ 
+[2023-08-16 15:44:52] Neutral count: 38
+ 
+[2023-08-16 15:44:54] Face detected at: (242, 820, 428, 634), Emotion: Unknown
+ 
+[2023-08-16 15:44:54] Capture enabled: False
+ 
+[2023-08-16 15:44:54] Video enabled: True
+ 
+[2023-08-16 15:44:54] Angry count: 6
+ 
+[2023-08-16 15:44:54] Disgust count: 0
+ 
+[2023-08-16 15:44:54] Fear count: 10
+ 
+[2023-08-16 15:44:54] Happy count: 9
+ 
+[2023-08-16 15:44:54] Sad count: 4
+ 
+[2023-08-16 15:44:54] Surprise count: 2
+ 
+[2023-08-16 15:44:54] Neutral count: 40
+ 
+[2023-08-16 15:44:56] Face detected at: (242, 736, 464, 513), Emotion: angry
+ 
+[2023-08-16 15:44:56] Capture enabled: False
+ 
+[2023-08-16 15:44:56] Video enabled: True
+ 
+[2023-08-16 15:44:56] Angry count: 8
+ 
+[2023-08-16 15:44:56] Disgust count: 0
+ 
+[2023-08-16 15:44:56] Fear count: 10
+ 
+[2023-08-16 15:44:56] Happy count: 9
+ 
+[2023-08-16 15:44:56] Sad count: 4
+ 
+[2023-08-16 15:44:56] Surprise count: 2
+ 
+[2023-08-16 15:44:56] Neutral count: 42
+ 
+[2023-08-16 15:44:58] Face detected at: (242, 716, 428, 531), Emotion: Unknown
+ 
+[2023-08-16 15:44:58] Face detected at: (32, 677, 140, 569), Emotion: happy
+ 
+[2023-08-16 15:44:58] Capture enabled: False
+ 
+[2023-08-16 15:44:58] Video enabled: True
+ 
+[2023-08-16 15:44:58] Angry count: 9
+ 
+[2023-08-16 15:44:58] Disgust count: 0
+ 
+[2023-08-16 15:44:58] Fear count: 11
+ 
+[2023-08-16 15:44:58] Happy count: 9
+ 
+[2023-08-16 15:44:58] Sad count: 5
+ 
+[2023-08-16 15:44:58] Surprise count: 2
+ 
+[2023-08-16 15:44:58] Neutral count: 42
+ 
+[2023-08-16 15:45:00] Face detected at: (242, 778, 428, 593), Emotion: neutral
+ 
+[2023-08-16 15:45:00] Capture enabled: False
+ 
+[2023-08-16 15:45:00] Video enabled: True
+ 
+[2023-08-16 15:45:00] Angry count: 9
+ 
+[2023-08-16 15:45:00] Disgust count: 0
+ 
+[2023-08-16 15:45:00] Fear count: 11
+ 
+[2023-08-16 15:45:00] Happy count: 9
+ 
+[2023-08-16 15:45:00] Sad count: 5
+ 
+[2023-08-16 15:45:00] Surprise count: 3
+ 
+[2023-08-16 15:45:00] Neutral count: 45
+ 
+[2023-08-16 15:45:02] Face detected at: (242, 778, 428, 593), Emotion: neutral
+ 
+[2023-08-16 15:45:02] Capture enabled: False
+ 
+[2023-08-16 15:45:02] Video enabled: True
+ 
+[2023-08-16 15:45:02] Angry count: 9
+ 
+[2023-08-16 15:45:02] Disgust count: 0
+ 
+[2023-08-16 15:45:02] Fear count: 11
+ 
+[2023-08-16 15:45:02] Happy count: 9
+ 
+[2023-08-16 15:45:02] Sad count: 5
+ 
+[2023-08-16 15:45:02] Surprise count: 3
+ 
+[2023-08-16 15:45:02] Neutral count: 49
+ 
+[2023-08-16 15:45:04] Face detected at: (242, 778, 428, 593), Emotion: neutral
+ 
+[2023-08-16 15:45:04] Capture enabled: False
+ 
+[2023-08-16 15:45:04] Video enabled: True
+ 
+[2023-08-16 15:45:04] Angry count: 9
+ 
+[2023-08-16 15:45:04] Disgust count: 0
+ 
+[2023-08-16 15:45:04] Fear count: 11
+ 
+[2023-08-16 15:45:04] Happy count: 9
+ 
+[2023-08-16 15:45:04] Sad count: 7
+ 
+[2023-08-16 15:45:04] Surprise count: 3
+ 
+[2023-08-16 15:45:04] Neutral count: 51
+ 
+[2023-08-16 15:45:06] Face detected at: (242, 737, 428, 551), Emotion: neutral
+ 
+[2023-08-16 15:45:06] Capture enabled: False
+ 
+[2023-08-16 15:45:06] Video enabled: True
+ 
+[2023-08-16 15:45:06] Angry count: 9
+ 
+[2023-08-16 15:45:06] Disgust count: 0
+ 
+[2023-08-16 15:45:06] Fear count: 11
+ 
+[2023-08-16 15:45:06] Happy count: 9
+ 
+[2023-08-16 15:45:06] Sad count: 7
+ 
+[2023-08-16 15:45:06] Surprise count: 3
+ 
+[2023-08-16 15:45:06] Neutral count: 52
+ 
+[2023-08-16 15:45:08] Face detected at: (217, 736, 440, 513), Emotion: Unknown
+ 
+[2023-08-16 15:45:08] Capture enabled: False
+ 
+[2023-08-16 15:45:08] Video enabled: True
+ 
+[2023-08-16 15:45:08] Angry count: 10
+ 
+[2023-08-16 15:45:08] Disgust count: 0
+ 
+[2023-08-16 15:45:08] Fear count: 11
+ 
+[2023-08-16 15:45:08] Happy count: 9
+ 
+[2023-08-16 15:45:08] Sad count: 7
+ 
+[2023-08-16 15:45:08] Surprise count: 3
+ 
+[2023-08-16 15:45:08] Neutral count: 53
+ 
+[2023-08-16 15:45:10] Face detected at: (222, 758, 407, 572), Emotion: fear
+ 
+[2023-08-16 15:45:10] Capture enabled: False
+ 
+[2023-08-16 15:45:10] Video enabled: True
+ 
+[2023-08-16 15:45:10] Angry count: 11
+ 
+[2023-08-16 15:45:10] Disgust count: 0
+ 
+[2023-08-16 15:45:10] Fear count: 12
+ 
+[2023-08-16 15:45:10] Happy count: 9
+ 
+[2023-08-16 15:45:10] Sad count: 7
+ 
+[2023-08-16 15:45:10] Surprise count: 3
+ 
+[2023-08-16 15:45:10] Neutral count: 55
+ 
+[2023-08-16 15:45:12] Face detected at: (217, 811, 440, 588), Emotion: happy
+ 
+[2023-08-16 15:45:12] Capture enabled: False
+ 
+[2023-08-16 15:45:12] Video enabled: True
+ 
+[2023-08-16 15:45:12] Angry count: 11
+ 
+[2023-08-16 15:45:12] Disgust count: 0
+ 
+[2023-08-16 15:45:12] Fear count: 14
+ 
+[2023-08-16 15:45:12] Happy count: 11
+ 
+[2023-08-16 15:45:12] Sad count: 7
+ 
+[2023-08-16 15:45:12] Surprise count: 3
+ 
+[2023-08-16 15:45:12] Neutral count: 55
+ 
+[2023-08-16 15:45:14] Face detected at: (242, 820, 428, 634), Emotion: Unknown
+ 
+[2023-08-16 15:45:14] Capture enabled: False
+ 
+[2023-08-16 15:45:14] Video enabled: True
+ 
+[2023-08-16 15:45:14] Angry count: 11
+ 
+[2023-08-16 15:45:14] Disgust count: 0
+ 
+[2023-08-16 15:45:14] Fear count: 15
+ 
+[2023-08-16 15:45:14] Happy count: 11
+ 
+[2023-08-16 15:45:14] Sad count: 8
+ 
+[2023-08-16 15:45:14] Surprise count: 3
+ 
+[2023-08-16 15:45:14] Neutral count: 56
+ 
+[2023-08-16 15:45:16] Capture enabled: False
+ 
+[2023-08-16 15:45:16] Video enabled: True
+ 
+[2023-08-16 15:45:16] Angry count: 11
+ 
+[2023-08-16 15:45:16] Disgust count: 0
+ 
+[2023-08-16 15:45:16] Fear count: 18
+ 
+[2023-08-16 15:45:16] Happy count: 11
+ 
+[2023-08-16 15:45:16] Sad count: 8
+ 
+[2023-08-16 15:45:16] Surprise count: 3
+ 
+[2023-08-16 15:45:16] Neutral count: 56
+ 
+[2023-08-16 15:45:18] Face detected at: (222, 737, 407, 551), Emotion: angry
+ 
+[2023-08-16 15:45:18] Capture enabled: False
+ 
+[2023-08-16 15:45:18] Video enabled: True
+ 
+[2023-08-16 15:45:18] Angry count: 13
+ 
+[2023-08-16 15:45:18] Disgust count: 0
+ 
+[2023-08-16 15:45:18] Fear count: 18
+ 
+[2023-08-16 15:45:18] Happy count: 11
+ 
+[2023-08-16 15:45:18] Sad count: 8
+ 
+[2023-08-16 15:45:18] Surprise count: 4
+ 
+[2023-08-16 15:45:18] Neutral count: 56
+ 
+[2023-08-16 15:45:20] Face detected at: (242, 758, 428, 572), Emotion: fear
+ 
+[2023-08-16 15:45:20] Capture enabled: False
+ 
+[2023-08-16 15:45:20] Video enabled: True
+ 
+[2023-08-16 15:45:20] Angry count: 14
+ 
+[2023-08-16 15:45:20] Disgust count: 0
+ 
+[2023-08-16 15:45:20] Fear count: 21
+ 
+[2023-08-16 15:45:20] Happy count: 11
+ 
+[2023-08-16 15:45:20] Sad count: 8
+ 
+[2023-08-16 15:45:20] Surprise count: 5
+ 
+[2023-08-16 15:45:20] Neutral count: 56
+ 
+[2023-08-16 15:45:22] Face detected at: (242, 758, 428, 572), Emotion: sad
+ 
+[2023-08-16 15:45:22] Capture enabled: False
+ 
+[2023-08-16 15:45:22] Video enabled: True
+ 
+[2023-08-16 15:45:22] Angry count: 14
+ 
+[2023-08-16 15:45:22] Disgust count: 0
+ 
+[2023-08-16 15:45:22] Fear count: 22
+ 
+[2023-08-16 15:45:22] Happy count: 12
+ 
+[2023-08-16 15:45:22] Sad count: 9
+ 
+[2023-08-16 15:45:22] Surprise count: 5
+ 
+[2023-08-16 15:45:22] Neutral count: 57
+ 
+[2023-08-16 15:45:24] Face detected at: (242, 758, 428, 572), Emotion: fear
+ 
+[2023-08-16 15:45:24] Capture enabled: False
+ 
+[2023-08-16 15:45:24] Video enabled: True
+ 
+[2023-08-16 15:45:24] Angry count: 14
+ 
+[2023-08-16 15:45:24] Disgust count: 0
+ 
+[2023-08-16 15:45:24] Fear count: 23
+ 
+[2023-08-16 15:45:24] Happy count: 12
+ 
+[2023-08-16 15:45:24] Sad count: 11
+ 
+[2023-08-16 15:45:24] Surprise count: 5
+ 
+[2023-08-16 15:45:24] Neutral count: 58
+ 
+[2023-08-16 15:45:26] Face detected at: (222, 758, 407, 572), Emotion: fear
+ 
+[2023-08-16 15:45:26] Capture enabled: False
+ 
+[2023-08-16 15:45:26] Video enabled: True
+ 
+[2023-08-16 15:45:26] Angry count: 14
+ 
+[2023-08-16 15:45:26] Disgust count: 1
+ 
+[2023-08-16 15:45:26] Fear count: 25
+ 
+[2023-08-16 15:45:26] Happy count: 12
+ 
+[2023-08-16 15:45:26] Sad count: 12
+ 
+[2023-08-16 15:45:26] Surprise count: 5
+ 
+[2023-08-16 15:45:26] Neutral count: 59
+ 
+[2023-08-16 15:45:28] Face detected at: (222, 737, 407, 551), Emotion: fear
+ 
+[2023-08-16 15:45:28] Capture enabled: False
+ 
+[2023-08-16 15:45:28] Video enabled: True
+ 
+[2023-08-16 15:45:28] Angry count: 14
+ 
+[2023-08-16 15:45:28] Disgust count: 1
+ 
+[2023-08-16 15:45:28] Fear count: 29
+ 
+[2023-08-16 15:45:28] Happy count: 12
+ 
+[2023-08-16 15:45:28] Sad count: 12
+ 
+[2023-08-16 15:45:28] Surprise count: 5
+ 
+[2023-08-16 15:45:28] Neutral count: 59
+ 
+[2023-08-16 15:45:30] Face detected at: (222, 820, 407, 634), Emotion: fear
+ 
+[2023-08-16 15:45:30] Capture enabled: False
+ 
+[2023-08-16 15:45:30] Video enabled: True
+ 
+[2023-08-16 15:45:30] Angry count: 16
+ 
+[2023-08-16 15:45:30] Disgust count: 1
+ 
+[2023-08-16 15:45:30] Fear count: 31
+ 
+[2023-08-16 15:45:30] Happy count: 12
+ 
+[2023-08-16 15:45:30] Sad count: 12
+ 
+[2023-08-16 15:45:30] Surprise count: 5
+ 
+[2023-08-16 15:45:30] Neutral count: 60
+ 
+[2023-08-16 15:45:32] Face detected at: (217, 835, 440, 613), Emotion: angry
+ 
+[2023-08-16 15:45:32] Capture enabled: False
+ 
+[2023-08-16 15:45:32] Video enabled: True
+ 
+[2023-08-16 15:45:32] Angry count: 18
+ 
+[2023-08-16 15:45:32] Disgust count: 1
+ 
+[2023-08-16 15:45:32] Fear count: 32
+ 
+[2023-08-16 15:45:32] Happy count: 12
+ 
+[2023-08-16 15:45:32] Sad count: 12
+ 
+[2023-08-16 15:45:32] Surprise count: 5
+ 
+[2023-08-16 15:45:32] Neutral count: 60
+ 
+[2023-08-16 15:45:34] Face detected at: (222, 758, 407, 572), Emotion: fear
+ 
+[2023-08-16 15:45:34] Capture enabled: False
+ 
+[2023-08-16 15:45:34] Video enabled: True
+ 
+[2023-08-16 15:45:34] Angry count: 19
+ 
+[2023-08-16 15:45:34] Disgust count: 1
+ 
+[2023-08-16 15:45:34] Fear count: 34
+ 
+[2023-08-16 15:45:34] Happy count: 12
+ 
+[2023-08-16 15:45:34] Sad count: 12
+ 
+[2023-08-16 15:45:34] Surprise count: 6
+ 
+[2023-08-16 15:45:34] Neutral count: 60
+ 
+[2023-08-16 15:45:36] Face detected at: (242, 716, 428, 531), Emotion: sad
+ 
+[2023-08-16 15:45:36] Face detected at: (391, 256, 434, 213), Emotion: happy
+ 
+[2023-08-16 15:45:36] Capture enabled: False
+ 
+[2023-08-16 15:45:36] Video enabled: True
+ 
+[2023-08-16 15:45:36] Angry count: 20
+ 
+[2023-08-16 15:45:36] Disgust count: 1
+ 
+[2023-08-16 15:45:36] Fear count: 34
+ 
+[2023-08-16 15:45:36] Happy count: 14
+ 
+[2023-08-16 15:45:36] Sad count: 15
+ 
+[2023-08-16 15:45:36] Surprise count: 6
+ 
+[2023-08-16 15:45:36] Neutral count: 60
+ 
+[2023-08-16 15:45:38] Face detected at: (222, 737, 407, 551), Emotion: Unknown
+ 
+[2023-08-16 15:45:38] Face detected at: (394, 257, 430, 221), Emotion: happy
+ 
+[2023-08-16 15:45:38] Capture enabled: False
+ 
+[2023-08-16 15:45:38] Video enabled: True
+ 
+[2023-08-16 15:45:38] Angry count: 22
+ 
+[2023-08-16 15:45:38] Disgust count: 1
+ 
+[2023-08-16 15:45:38] Fear count: 35
+ 
+[2023-08-16 15:45:38] Happy count: 14
+ 
+[2023-08-16 15:45:38] Sad count: 16
+ 
+[2023-08-16 15:45:38] Surprise count: 6
+ 
+[2023-08-16 15:45:38] Neutral count: 60
+ 
+[2023-08-16 15:45:40] Face detected at: (217, 811, 440, 588), Emotion: surprise
+ 
+[2023-08-16 15:45:40] Capture enabled: False
+ 
+[2023-08-16 15:45:40] Video enabled: True
+ 
+[2023-08-16 15:45:40] Angry count: 22
+ 
+[2023-08-16 15:45:40] Disgust count: 1
+ 
+[2023-08-16 15:45:40] Fear count: 36
+ 
+[2023-08-16 15:45:40] Happy count: 15
+ 
+[2023-08-16 15:45:40] Sad count: 18
+ 
+[2023-08-16 15:45:40] Surprise count: 7
+ 
+[2023-08-16 15:45:40] Neutral count: 62
+ 
+[2023-08-16 15:45:42] Face detected at: (242, 716, 428, 531), Emotion: Unknown
+ 
+[2023-08-16 15:45:42] Face detected at: (391, 266, 434, 223), Emotion: happy
+ 
+[2023-08-16 15:45:42] Capture enabled: False
+ 
+[2023-08-16 15:45:42] Video enabled: True
+ 
+[2023-08-16 15:45:42] Angry count: 23
+ 
+[2023-08-16 15:45:42] Disgust count: 1
+ 
+[2023-08-16 15:45:42] Fear count: 37
+ 
+[2023-08-16 15:45:42] Happy count: 16
+ 
+[2023-08-16 15:45:42] Sad count: 19
+ 
+[2023-08-16 15:45:42] Surprise count: 7
+ 
+[2023-08-16 15:45:42] Neutral count: 62
+ 
+[2023-08-16 15:45:44] Face detected at: (242, 786, 464, 563), Emotion: neutral
+ 
+[2023-08-16 15:45:44] Capture enabled: False
+ 
+[2023-08-16 15:45:44] Video enabled: True
+ 
+[2023-08-16 15:45:44] Angry count: 23
+ 
+[2023-08-16 15:45:44] Disgust count: 1
+ 
+[2023-08-16 15:45:44] Fear count: 39
+ 
+[2023-08-16 15:45:44] Happy count: 16
+ 
+[2023-08-16 15:45:44] Sad count: 19
+ 
+[2023-08-16 15:45:44] Surprise count: 7
+ 
+[2023-08-16 15:45:44] Neutral count: 64
+ 
+[2023-08-16 15:45:46] Face detected at: (242, 758, 428, 572), Emotion: neutral
+ 
+[2023-08-16 15:45:46] Face detected at: (391, 266, 434, 223), Emotion: happy
+ 
+[2023-08-16 15:45:46] Capture enabled: False
+ 
+[2023-08-16 15:45:46] Video enabled: True
+ 
+[2023-08-16 15:45:46] Angry count: 23
+ 
+[2023-08-16 15:45:46] Disgust count: 1
+ 
+[2023-08-16 15:45:46] Fear count: 39
+ 
+[2023-08-16 15:45:46] Happy count: 16
+ 
+[2023-08-16 15:45:46] Sad count: 20
+ 
+[2023-08-16 15:45:46] Surprise count: 7
+ 
+[2023-08-16 15:45:46] Neutral count: 66
+ 
+[2023-08-16 15:45:48] Face detected at: (242, 758, 428, 572), Emotion: Unknown
+ 
+[2023-08-16 15:45:48] Capture enabled: False
+ 
+[2023-08-16 15:45:48] Video enabled: True
+ 
+[2023-08-16 15:45:48] Angry count: 24
+ 
+[2023-08-16 15:45:48] Disgust count: 1
+ 
+[2023-08-16 15:45:48] Fear count: 39
+ 
+[2023-08-16 15:45:48] Happy count: 16
+ 
+[2023-08-16 15:45:48] Sad count: 20
+ 
+[2023-08-16 15:45:48] Surprise count: 8
+ 
+[2023-08-16 15:45:48] Neutral count: 66
+ 
+[2023-08-16 15:45:50] Face detected at: (263, 758, 449, 572), Emotion: neutral
+ 
+[2023-08-16 15:45:50] Capture enabled: False
+ 
+[2023-08-16 15:45:50] Video enabled: False
+ 
+[2023-08-16 15:45:50] Angry count: 24
+ 
+[2023-08-16 15:45:50] Disgust count: 1
+ 
+[2023-08-16 15:45:50] Fear count: 39
+ 
+[2023-08-16 15:45:50] Happy count: 16
+ 
+[2023-08-16 15:45:50] Sad count: 20
+ 
+[2023-08-16 15:45:50] Surprise count: 8
+ 
+[2023-08-16 15:45:50] Neutral count: 71
+ 

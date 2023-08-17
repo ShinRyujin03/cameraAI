@@ -34,21 +34,18 @@ class Camera:
             if self.face_locations:
                 for i, face_location in enumerate(self.face_locations):
                     top, right, bottom, left = face_location
-                    cv2.rectangle(frame, (left, top), (right, bottom), (0, 255, 0), 2)
+                    cv2.rectangle(frame, (left, top), (right, bottom), Config.box_color, 2)
                     face_image = rgb_frame[top:bottom, left:right]
                     face_emotion = self.detect_emotion(face_image)
                     self.face_emotions.append(face_emotion)  # Thêm cảm xúc vào danh sách
-
+                    emotion_text = f"{Config.emotion_text} {face_emotion}"
+                    config_instance = Config()
+                    location_text = config_instance.location_text(top, right, bottom, left)
                     if face_emotion is not None:
-                        emotion_text = f"Emotion: {face_emotion}"
-                        location_text = f"Location: top={top}, right={right}, bottom={bottom}, left={left}"
-                        cv2.putText(frame, emotion_text, (left, bottom + 30), cv2.FONT_HERSHEY_SIMPLEX, 0.5,
-                                    (0, 255, 0), 2)
-                        cv2.putText(frame, location_text, (left, bottom + 15), cv2.FONT_HERSHEY_SIMPLEX, 0.5,
-                                    (0, 255, 0), 2)
+                        cv2.putText(frame, emotion_text, (left, bottom + 30), cv2.FONT_HERSHEY_SIMPLEX, 0.5, Config.text_color, 2)
+                        cv2.putText(frame, location_text, (left, bottom + 15), cv2.FONT_HERSHEY_SIMPLEX, 0.5, Config.text_color, 2)
                     else:
-                        cv2.putText(frame, location_text, (left, bottom + 15), cv2.FONT_HERSHEY_SIMPLEX, 0.5,
-                                    (0, 255, 0), 2)
+                        cv2.putText(frame, location_text, (left, bottom + 15), cv2.FONT_HERSHEY_SIMPLEX, 0.5, Config.text_color, 2)
 
                 self.capture_image(frame)
 
@@ -90,7 +87,7 @@ class Camera:
     def write_video_frame(self, frame):
         if self.video_writer is None:
             fourcc = cv2.VideoWriter_fourcc(*'H264')
-            self.video_writer = cv2.VideoWriter(self.video_filename, fourcc, 5.0, (frame.shape[1], frame.shape[0]))
+            self.video_writer = cv2.VideoWriter(self.video_filename, fourcc, Config.output_vid_fps, (frame.shape[1], frame.shape[0]))
 
         self.video_writer.write(frame)
 
@@ -100,7 +97,7 @@ class Camera:
             if current_time - self.last_capture_time >= 1:  # Chờ ít nhất 1 giây giữa mỗi lần chụp
                 self.last_capture_time = current_time
 
-                image_filename = os.path.join(self.image_folder, f'captured_{time.strftime("%Y%m%d%H%M%S")}.jpg')
+                image_filename = os.path.join(self.image_folder, time.strftime(Config.image_filename))
                 cv2.imwrite(image_filename, frame)
                 print(f"Image captured: {image_filename}")
 
@@ -130,10 +127,13 @@ class Camera:
         log_messages = []
 
         for i, location in enumerate(self.face_locations):
+            top, right, bottom, left = location
             emotion = self.face_emotions[i-1]
-            emotion_text = f"Emotion: {emotion}" if emotion is not None else "Emotion: Unknown"
-            location_text = f"Face detected at: {location}, {emotion_text}"
-            log_messages.append(location_text)
+            emotion_text = f"{Config.emotion_text} {emotion}" if emotion is not None else Config.emotion_text_none
+            config_instance = Config()
+            location_text = config_instance.location_text(top, right, bottom, left)
+            text = f"{location_text}, {emotion_text}"
+            log_messages.append(text)
 
         if self.total_image_count > 0:
             log_messages.append(f"Total images captured: {self.total_image_count}")

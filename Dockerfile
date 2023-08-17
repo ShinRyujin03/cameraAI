@@ -8,6 +8,7 @@ WORKDIR /CameraAI
 COPY requirements.txt .
 
 # Cài đặt các gói từ requirements.txt
+RUN pip install -U pip wheel cmake
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Sao chép tất cả mã nguồn vào thư mục làm việc trong hình ảnh

@@ -7,7 +7,7 @@ from app.config import Config
 camera = Camera(socketio)
 @app.route('/')
 def index():
-    return render_template('A.html')
+    return render_template(Config.template_path)
 
 @app.route('/recognize_face', methods=['GET'])
 def recognize_face():
